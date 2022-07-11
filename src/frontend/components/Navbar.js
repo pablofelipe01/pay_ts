@@ -8,15 +8,15 @@ const Navigation = ({ web3Handler, account }) => {
             <Container>
                 <Navbar.Brand>
                     <img src={nft} width="40" height="40" className="" alt="" />
-                    &nbsp; NFT Marketplace
+                    &nbsp; NFTs Token Contract
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar navbar-dark bg-primary" />
                 <Navbar.Collapse id="navbar navbar-dark bg-primary">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/create">Create</Nav.Link>
-                        <Nav.Link as={Link} to="/my-listed-items">Items</Nav.Link>
-                        <Nav.Link as={Link} to="/my-purchases">Purchases</Nav.Link>
+                        <Nav.Link as={Link} to="/my-listed-items">History</Nav.Link>
+                        <Nav.Link as={Link} to="/my-purchases">My Tokens</Nav.Link>
                     </Nav>
                     <Nav>
                         {account ? (
